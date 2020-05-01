@@ -1,0 +1,27 @@
+/*
+ * Waiting room
+ */
+
+#card-waiting-room {
+    width: 70%;
+    min-width: 20em;
+    margin: auto;
+}
+
+#waiting-room-spinner-wrapper {
+    margin-top: 17%;
+}
+
+#waiting-room-spinner {
+    width: 8em;
+    height: 8em;
+}
+
+.player-div {
+    box-shadow: 1px 1px 5px black;
+    border-radius: 5px;
+}
+
+#waiting-room-timer {
+    height: 3em;
+}

@@ -1,0 +1,14 @@
+/*
+ * Game
+ */
+
+#click-zone {
+    min-width: 20em;
+    min-height: 20em;
+}
+
+#card-end-game {
+    width: 70%;
+    min-width: 20em;
+    margin: auto;
+}
