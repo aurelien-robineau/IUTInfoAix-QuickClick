@@ -21,7 +21,7 @@
 
     // Initialize session user
     $.ajax({
-        url: "../../php/getPlayerInfos.php",
+        url: "./php/getPlayerInfos.php",
         type: "post",
     }).done( function (player) {
         sessionUser = player;
@@ -29,7 +29,7 @@
 
     $(document).ready( function () {
         $.ajax({
-            url: '../../php/is_connected.php'
+            url: './php/is_connected.php'
         }).done( function (data) {
             /* data content :
              * - success
@@ -52,7 +52,7 @@
      */
     function fillTopPlayersArea() {
         $.ajax({
-            url: '../../database/getBestPlayers.php',
+            url: './database/getBestPlayers.php',
             error: () => { errorMessage(!navigator.onLine ? "Pas de connexion internet." : "Erreur."); }
         }).done( function (data) {
             if (data.success === true) {
@@ -107,7 +107,7 @@
      */
     function login() {
         $.ajax({
-            url: "../../database/login.php",
+            url: "./database/login.php",
             type: "post",
             data: $(this).serialize(),
             error: () => { errorMessage(!navigator.onLine ? "Pas de connexion internet." : "Erreur."); }
@@ -224,7 +224,7 @@
      */
     function logOut () {
         $.ajax({
-            url: '../../php/logout.php',
+            url: './php/logout.php',
             error: () => { errorMessage(!navigator.onLine ? "Pas de connexion internet." : "Erreur."); }
         }).done( function (data) {
             if(data.success === true) {
