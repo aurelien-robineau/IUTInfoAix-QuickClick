@@ -1,6 +1,9 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        
         <title>QUICK CLICK</title>
         <link rel="icon" href="favicon.ico" />
 
@@ -30,6 +33,7 @@
     <body class="elegant-color-dark">
         <div id="home" class="container">
             <div class="text-center mt-5" id="home-title">
+                <?php echo  $_SESSION['error'] ?>
                 <h3 class="h3 text-white m-0">Aurélien ROBINEAU</h3>
                 <h1 id="title" class="green-text">QUICK CLICK</h1>
             </div>
